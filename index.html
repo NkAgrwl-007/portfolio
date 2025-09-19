@@ -1,253 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naman Agrawal - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Naman Agrawal</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+        </div>
+    </nav>
 
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="download.jpeg" type="image/png">
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Naman Agrawal</h1>
+            <p>Cybersecurity Enthusiast & Full-Stack Developer</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <i class="fas fa-code"></i>
+                    View Projects
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <title>Naman agarwal portfolio</title>
-    </head>
-    <body style="background-color: #09475ae0" >
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">NAMAN AGRAWAL</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">NAMAN </span><br> Web Designer</h1>
-
-                    <a href="#" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="www.linkedin.com/in/naman-agrawal-429325204" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 
-                            311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 
-                            294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137
-                            65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 
-                            29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026
-                            467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245
-                            326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 
-                            299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="WhatsApp Image 2023-10-25 at 21.55.28_2000d123.jpg"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="WhatsApp Image 2023-10-25 at 21.55.28_587b1be7.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am NAMAN AGRWAL</h2>
-                        <p class="about__text">Greetings! I'm Naman Agrawal, a passionate student pursuing a Bachelor's in Technology at GLA University, currently in my second year of studies. With a fervent interest in technology, I'm taking my first steps into the dynamic world of web development and ethical hacking.
-
-                            I believe in the power of continuous learning and am dedicated to honing my skills in these fields. Through my journey, I aim to not only build functional and aesthetically pleasing web applications but also contribute to creating a safer digital landscape.
-                            
-                            Feel free to explore my portfolio and join me on this exciting journey of discovery and innovation.
-                            
-                            </p>
-                    </div>                                   
-                </div>
-            </section>
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">i had learned a lot in these languages and having a experince of 1 year </p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">100%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVA</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">PYTHON</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">Ethical Hacking</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">45%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="WhatsApp Image 2023-10-25 at 21.55.28_57ae4e5d.jpg802987417" alt="" class="skills__img">
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title scroll-animate">
+                <h2>About Me</h2>
+                <p>Passionate about cybersecurity and building innovative solutions</p>
+            </div>
+            <div class="about-grid scroll-animate">
+                <div class="about-image">
+                    <div class="about-placeholder">
+                        <img src="profile_photo.jpg" alt="Naman Agrawal" class="profile-img">
                     </div>
                 </div>
-            </section>
-
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-                <ul>
-                    <li>
-                        <strong>Calculator with Neon Effect</strong>
-                        <p>
-                            Description: I designed and developed a fully functional calculator using HTML, CSS, and JavaScript. The calculator features a sleek neon effect for a modern and engaging user interface. It performs basic arithmetic operations and provides a user-friendly experience.
-                        </p>
-                        <p>
-                            Technologies Used:
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                            </ul>
-                        </p>
-                        <p>
-                            Role: I was the sole developer responsible for designing and implementing the calculator's functionality, as well as creating the neon effect to enhance its visual appeal.
-                        </p>
-                    </li>
-                    <li>
-                        <strong>To-Do List with Neon Effect</strong>
-                        <p>
-                            Description: I created a dynamic to-do list application using HTML, CSS, and JavaScript, incorporating a striking neon effect for an eye-catching display. Users can add, edit, and remove tasks, making it an efficient tool for organizing daily activities.
-                        </p>
-                        <p>
-                            Technologies Used:
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                            </ul>
-                        </p>
-                        <p>
-                            Role: As the primary developer, I conceptualized, designed, and implemented the to-do list's functionality. The neon effect was integrated to enhance the aesthetic appeal and user experience.
-                        </p>
-                    </li>
-                    <li>
-                        <strong>Ethical Hacking Course</strong>
-                        <p>
-                            Description: I successfully completed an ethical hacking course, gaining in-depth knowledge of cybersecurity practices, penetration testing, and ethical hacking techniques. This comprehensive training equipped me with the skills to identify and rectify security vulnerabilities in digital systems.
-                        </p>
-                    </li>
-                    <li>
-                        <strong>Webinars on AI, Machine Learning, and Cybersecurity</strong>
-                        <p>
-                            Description: I actively participated in multiple webinars focused on cutting-edge technologies such as Artificial Intelligence (AI) and Machine Learning (ML), as well as cybersecurity best practices. These sessions provided valuable insights into the latest trends and advancements in the field, contributing to my continuous learning and professional development.
-                        </p>
-                    </li>
-                </ul>                
-
-                <div class="work__container bd-grid">
-                    
-                        <img src="Screenshot 2023-09-24 165400.png" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="OIP.jpeg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="OIP (1).jpeg" alt="">
-                    </a>
+                <div class="about-content">
+                    <h3>Computer Science Student & Security Researcher</h3>
+                    <p>Currently pursuing Bachelor of Technology in Computer Science at GLA University with a CGPA of 8.23. I specialize in cybersecurity, full-stack development, and competitive programming.</p>
+                    <p>My passion lies in identifying and mitigating cyber threats while building robust, user-friendly applications. I enjoy solving complex problems and continuously learning about emerging technologies in the cybersecurity domain.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">400+</div>
+                            <div class="stat-label">LeetCode Problems</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">GeeksforGeeks Problems</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8.2</div>
+                            <div class="stat-label">CGPA</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number"></div>
+                            <div class="stat-label"> </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+            </div>
+        </div>
+    </section>
 
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea type="Description" name="Description" id="text"  cols="0" rows="4" class="contact__input"></textarea>
-                        <input type="button" value="ENTER" class="contact__button button">
+    <!-- Skills Section -->
+    <section id="skills" class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-title scroll-animate">
+                <h2>Technical Skills</h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category scroll-animate">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C</span>
+                    </div>
+                </div>
+                <div class="skill-category scroll-animate">
+                    <h3><i class="fas fa-globe"></i> Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-category scroll-animate">
+                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">Metasploit</span>
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">Burp Suite</span>
+                        <span class="skill-tag">Ethical Hacking</span>
+                        <span class="skill-tag">Penetration Testing</span>
+                    </div>
+                </div>
+                <div class="skill-category scroll-animate">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">SQLite</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-title scroll-animate">
+                <h2>Featured Projects</h2>
+                <p>Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card scroll-animate">
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">Honeypot AI</h3>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        End-to-end honeypot system for automated cyber threat data collection and analysis with machine learning-based anomaly detection using Isolation Forest algorithm.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Machine Learning</span>
+                    </div>
+                </div>
+
+                <div class="project-card scroll-animate">
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">Paisa Controller</h3>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Personal finance management platform with expense tracking, budgeting, savings planning, and AI-driven insights for financial health analysis.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">AI Integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-title scroll-animate">
+                <h2>Experience</h2>
+                <p>My professional journey</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="experience-item scroll-animate">
+                    <div class="experience-meta">
+                        <div>
+                            <h3 class="experience-title">Cybersecurity Intern</h3>
+                            <div class="experience-company">Coincent (Remote)</div>
+                        </div>
+                        <div class="experience-date">Aug 2024 – Sep 2024</div>
+                    </div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>Performed vulnerability assessments and penetration testing in simulated environments</li>
+                            <li>Utilized advanced security tools like Nmap, Metasploit, and Wireshark for comprehensive threat analysis</li>
+                            <li>Gained practical experience in identifying and exploiting system vulnerabilities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item scroll-animate">
+                    <div class="experience-meta">
+                        <div>
+                            <h3 class="experience-title">Competitive Programming Trainee</h3>
+                            <div class="experience-company">GLA University, Mathura</div>
+                        </div>
+                        <div class="experience-date">Jun 2024 – Jul 2024</div>
+                    </div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>Solved 400+ problems on LeetCode and 100+ on GeeksforGeeks</li>
+                            <li>Strengthened Data Structures and Algorithms skills through intensive practice</li>
+                            <li>Participated in competitive programming contests and improved problem-solving efficiency</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item scroll-animate">
+                    <div class="experience-meta">
+                        <div>
+                            <h3 class="experience-title">Cybersecurity Trainee</h3>
+                            <div class="experience-company">Coincent (Remote)</div>
+                        </div>
+                        <div class="experience-date">Dec 2022 – Feb 2023</div>
+                    </div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>Conducted network scanning and penetration testing to identify system vulnerabilities</li>
+                            <li>Developed expertise in cybersecurity tools including Nmap, Metasploit, and Wireshark</li>
+                            <li>Learned ethical hacking methodologies and security assessment techniques</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title scroll-animate">
+                <h2>Get In Touch</h2>
+                <p>Let's discuss opportunities and collaborations</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info scroll-animate">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+919548016656">+91 9548016656</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:naman@gmail.com">naman@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="#" target="_blank">Connect with me</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="#" target="_blank">View my code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form scroll-animate">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
                     </form>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <p class="footer__title">NAMAN AGRWAL</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-github' ></i></a>
             </div>
-        </footer>
+        </div>
+    </section>
 
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="main.js"></script>
-    </body>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link" title="LeetCode">
+                    <i class="fas fa-code"></i>
+                </a>
+                <a href="#" class="social-link" title="Portfolio">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Naman Agrawal. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
